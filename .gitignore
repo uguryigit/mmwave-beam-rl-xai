@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets / local config
+.env
+.env.local
+*.pem
+
+# Build artefacts
+*.zip
+build/
+dist/
+
+# Project-specific runtime artefacts
+episodes/
+logs/
+
+# Local-only credential documents (kept on disk, never pushed)
+**/*Credential*.docx
+**/*Credentials*.docx

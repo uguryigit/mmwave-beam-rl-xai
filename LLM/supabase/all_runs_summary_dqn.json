@@ -1,0 +1,4808 @@
+{
+  "total_runs": 75,
+  "total_wall_time_sec": 939956.932261562,
+  "start_time": "2025-09-25T19:26:15.221749Z",
+  "end_time": "2025-09-25T23:22:39.832741Z",
+  "runs": [
+    {
+      "run_id": 0,
+      "seed": {
+        "master": 42,
+        "np_seed": 2684470948,
+        "py_seed": 4091952314,
+        "torch_seed": 233227757,
+        "env_seed": 3276785861,
+        "action_seed": 3644269654,
+        "replay_seed": 1206282609,
+        "eval_seed": 3543069911
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13196.012115325,
+      "final_eval_mean_reward": 75.48228979999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_00",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 155331,
+          "freq": 0.86295
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 9640,
+          "freq": 0.05355555555555556
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 7709,
+          "freq": 0.04282777777777778
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_00/dqn_roundabout_mlp_run00.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.915842Z",
+      "position": [
+        0,
+        0
+      ],
+      "end_time": "2025-09-25T23:23:54.005387Z",
+      "timestamp": "2025-09-25T23:23:54.005397Z"
+    },
+    {
+      "run_id": 1,
+      "seed": {
+        "master": 43,
+        "np_seed": 3245521287,
+        "py_seed": 1692733417,
+        "torch_seed": 3680399997,
+        "env_seed": 3905576545,
+        "action_seed": 3758222472,
+        "replay_seed": 1904879373,
+        "eval_seed": 1584644994
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12978.157319783,
+      "final_eval_mean_reward": 74.2828546,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_01",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 147146,
+          "freq": 0.8174777777777777
+        },
+        {
+          "rank": 2,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 7016,
+          "freq": 0.03897777777777778
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 6356,
+          "freq": 0.03531111111111111
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_01/dqn_roundabout_mlp_run01.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:10.535047Z",
+      "position": [
+        0,
+        25
+      ],
+      "end_time": "2025-09-25T23:19:21.011907Z",
+      "timestamp": "2025-09-25T23:19:21.011917Z"
+    },
+    {
+      "run_id": 2,
+      "seed": {
+        "master": 44,
+        "np_seed": 2535795776,
+        "py_seed": 2706348293,
+        "torch_seed": 3767400454,
+        "env_seed": 620754375,
+        "action_seed": 729707487,
+        "replay_seed": 827222629,
+        "eval_seed": 4124492655
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13279.81472175,
+      "final_eval_mean_reward": 67.81840799999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_02",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 58965,
+          "freq": 0.32758333333333334
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 23176,
+          "freq": 0.12875555555555557
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 22660,
+          "freq": 0.12588888888888888
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_02/dqn_roundabout_mlp_run02.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:09.291802Z",
+      "position": [
+        0,
+        50
+      ],
+      "end_time": "2025-09-25T23:24:13.584871Z",
+      "timestamp": "2025-09-25T23:24:13.584881Z"
+    },
+    {
+      "run_id": 3,
+      "seed": {
+        "master": 45,
+        "np_seed": 384309742,
+        "py_seed": 2165957773,
+        "torch_seed": 898150331,
+        "env_seed": 2289654706,
+        "action_seed": 1444749844,
+        "replay_seed": 3389259093,
+        "eval_seed": 368054353
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12994.387480950994,
+      "final_eval_mean_reward": 95.4092214,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_03",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 79539,
+          "freq": 0.44188333333333335
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 44945,
+          "freq": 0.24969444444444444
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 24443,
+          "freq": 0.13579444444444444
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_03/dqn_roundabout_mlp_run03.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:09.926047Z",
+      "position": [
+        0,
+        75
+      ],
+      "end_time": "2025-09-25T23:19:18.237279Z",
+      "timestamp": "2025-09-25T23:19:18.237289Z"
+    },
+    {
+      "run_id": 4,
+      "seed": {
+        "master": 46,
+        "np_seed": 843705637,
+        "py_seed": 744107521,
+        "torch_seed": 3230435958,
+        "env_seed": 3831056544,
+        "action_seed": 3040639404,
+        "replay_seed": 502466011,
+        "eval_seed": 381657175
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13152.906076663,
+      "final_eval_mean_reward": 92.0182696,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_04",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 112301,
+          "freq": 0.6238944444444444
+        },
+        {
+          "rank": 2,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 25901,
+          "freq": 0.14389444444444444
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 24852,
+          "freq": 0.13806666666666667
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_04/dqn_roundabout_mlp_run04.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.541685Z",
+      "position": [
+        0,
+        100
+      ],
+      "end_time": "2025-09-25T23:21:17.628644Z",
+      "timestamp": "2025-09-25T23:21:17.628652Z"
+    },
+    {
+      "run_id": 5,
+      "seed": {
+        "master": 47,
+        "np_seed": 2429370086,
+        "py_seed": 3188130307,
+        "torch_seed": 4227752691,
+        "env_seed": 2009676292,
+        "action_seed": 2492708340,
+        "replay_seed": 779733876,
+        "eval_seed": 91613514
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13024.900782381003,
+      "final_eval_mean_reward": 71.89106919999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_05",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 97756,
+          "freq": 0.5430888888888888
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 47879,
+          "freq": 0.2659944444444444
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 9896,
+          "freq": 0.05497777777777778
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_05/dqn_roundabout_mlp_run05.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:10.738945Z",
+      "position": [
+        25,
+        0
+      ],
+      "end_time": "2025-09-25T23:19:47.863916Z",
+      "timestamp": "2025-09-25T23:19:47.863924Z"
+    },
+    {
+      "run_id": 6,
+      "seed": {
+        "master": 48,
+        "np_seed": 195876157,
+        "py_seed": 66394455,
+        "torch_seed": 4289625882,
+        "env_seed": 2740077,
+        "action_seed": 1791394675,
+        "replay_seed": 670348695,
+        "eval_seed": 1810690209
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13252.366378940998,
+      "final_eval_mean_reward": 88.9346922,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_06",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 73271,
+          "freq": 0.4070611111111111
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 51788,
+          "freq": 0.2877111111111111
+        },
+        {
+          "rank": 3,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 25522,
+          "freq": 0.14178888888888888
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_06/dqn_roundabout_mlp_run06.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.937710Z",
+      "position": [
+        25,
+        25
+      ],
+      "end_time": "2025-09-25T23:23:59.781809Z",
+      "timestamp": "2025-09-25T23:23:59.781816Z"
+    },
+    {
+      "run_id": 7,
+      "seed": {
+        "master": 49,
+        "np_seed": 445306049,
+        "py_seed": 3693916374,
+        "torch_seed": 949576624,
+        "env_seed": 2738088091,
+        "action_seed": 1925983787,
+        "replay_seed": 1229012840,
+        "eval_seed": 841112221
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13032.563557825997,
+      "final_eval_mean_reward": 100.88185859999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_07",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 96732,
+          "freq": 0.5374
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 34473,
+          "freq": 0.19151666666666667
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 16043,
+          "freq": 0.08912777777777778
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_07/dqn_roundabout_mlp_run07.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.537679Z",
+      "position": [
+        25,
+        50
+      ],
+      "end_time": "2025-09-25T23:20:05.938906Z",
+      "timestamp": "2025-09-25T23:20:05.938916Z"
+    },
+    {
+      "run_id": 8,
+      "seed": {
+        "master": 50,
+        "np_seed": 1905310896,
+        "py_seed": 182991145,
+        "torch_seed": 2451755104,
+        "env_seed": 3977445824,
+        "action_seed": 475136014,
+        "replay_seed": 2215974789,
+        "eval_seed": 3795441485
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13277.223252878,
+      "final_eval_mean_reward": 107.3735174,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_08",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 82772,
+          "freq": 0.45984444444444444
+        },
+        {
+          "rank": 2,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 23288,
+          "freq": 0.12937777777777779
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 22256,
+          "freq": 0.12364444444444445
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_08/dqn_roundabout_mlp_run08.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.937839Z",
+      "position": [
+        25,
+        75
+      ],
+      "end_time": "2025-09-25T23:24:49.337771Z",
+      "timestamp": "2025-09-25T23:24:49.337781Z"
+    },
+    {
+      "run_id": 9,
+      "seed": {
+        "master": 51,
+        "np_seed": 1180500846,
+        "py_seed": 2839394463,
+        "torch_seed": 3961613920,
+        "env_seed": 600283742,
+        "action_seed": 1139352118,
+        "replay_seed": 3697987019,
+        "eval_seed": 668877673
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13055.105717266,
+      "final_eval_mean_reward": 130.2929932,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_09",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 83535,
+          "freq": 0.46408333333333335
+        },
+        {
+          "rank": 2,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 46087,
+          "freq": 0.25603888888888887
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 33763,
+          "freq": 0.18757222222222222
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_09/dqn_roundabout_mlp_run09.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.197817Z",
+      "position": [
+        25,
+        100
+      ],
+      "end_time": "2025-09-25T23:19:26.090264Z",
+      "timestamp": "2025-09-25T23:19:26.090274Z"
+    },
+    {
+      "run_id": 10,
+      "seed": {
+        "master": 52,
+        "np_seed": 4211465754,
+        "py_seed": 2820363851,
+        "torch_seed": 2017167754,
+        "env_seed": 1069980692,
+        "action_seed": 4106576190,
+        "replay_seed": 1015983039,
+        "eval_seed": 4270987889
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13164.022135048996,
+      "final_eval_mean_reward": 86.5186914,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_10",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 68331,
+          "freq": 0.37961666666666666
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 36240,
+          "freq": 0.20133333333333334
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 21169,
+          "freq": 0.11760555555555556
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_10/dqn_roundabout_mlp_run10.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:11.411704Z",
+      "position": [
+        50,
+        0
+      ],
+      "end_time": "2025-09-25T23:21:54.046955Z",
+      "timestamp": "2025-09-25T23:21:54.046965Z"
+    },
+    {
+      "run_id": 11,
+      "seed": {
+        "master": 53,
+        "np_seed": 1630910187,
+        "py_seed": 3365231977,
+        "torch_seed": 1724008679,
+        "env_seed": 3361776917,
+        "action_seed": 1978004822,
+        "replay_seed": 4234625401,
+        "eval_seed": 1064175717
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12894.430367565998,
+      "final_eval_mean_reward": 102.2193078,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_11",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 68712,
+          "freq": 0.3817333333333333
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 38450,
+          "freq": 0.2136111111111111
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 30422,
+          "freq": 0.1690111111111111
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_11/dqn_roundabout_mlp_run11.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:11.349901Z",
+      "position": [
+        50,
+        25
+      ],
+      "end_time": "2025-09-25T23:18:01.546295Z",
+      "timestamp": "2025-09-25T23:18:01.546305Z"
+    },
+    {
+      "run_id": 12,
+      "seed": {
+        "master": 54,
+        "np_seed": 3039882712,
+        "py_seed": 4278610024,
+        "torch_seed": 1820206089,
+        "env_seed": 4159244046,
+        "action_seed": 259844097,
+        "replay_seed": 838767830,
+        "eval_seed": 319188835
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13243.016425620997,
+      "final_eval_mean_reward": 114.74029279999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_12",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 62285,
+          "freq": 0.34602777777777777
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 33873,
+          "freq": 0.18818333333333334
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 33496,
+          "freq": 0.1860888888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_12/dqn_roundabout_mlp_run12.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.919949Z",
+      "position": [
+        50,
+        50
+      ],
+      "end_time": "2025-09-25T23:24:04.910352Z",
+      "timestamp": "2025-09-25T23:24:04.910361Z"
+    },
+    {
+      "run_id": 13,
+      "seed": {
+        "master": 55,
+        "np_seed": 2679673231,
+        "py_seed": 1630877915,
+        "torch_seed": 2997586378,
+        "env_seed": 302719986,
+        "action_seed": 1930307157,
+        "replay_seed": 3025893026,
+        "eval_seed": 1829729468
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12932.617673208995,
+      "final_eval_mean_reward": 132.1225508,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_13",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 62367,
+          "freq": 0.3464833333333333
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 40423,
+          "freq": 0.22457222222222223
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 23749,
+          "freq": 0.13193888888888888
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_13/dqn_roundabout_mlp_run13.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:09.602792Z",
+      "position": [
+        50,
+        75
+      ],
+      "end_time": "2025-09-25T23:17:59.599835Z",
+      "timestamp": "2025-09-25T23:17:59.599847Z"
+    },
+    {
+      "run_id": 14,
+      "seed": {
+        "master": 56,
+        "np_seed": 2753586766,
+        "py_seed": 569888030,
+        "torch_seed": 2136251436,
+        "env_seed": 2629230166,
+        "action_seed": 576063828,
+        "replay_seed": 2623930768,
+        "eval_seed": 1036243817
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13270.601476621,
+      "final_eval_mean_reward": 138.56788999999998,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_14",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 64819,
+          "freq": 0.36010555555555557
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 23859,
+          "freq": 0.13255
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 16481,
+          "freq": 0.09156111111111111
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_14/dqn_roundabout_mlp_run14.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:10.229194Z",
+      "position": [
+        50,
+        100
+      ],
+      "end_time": "2025-09-25T23:23:46.900185Z",
+      "timestamp": "2025-09-25T23:23:46.900196Z"
+    },
+    {
+      "run_id": 15,
+      "seed": {
+        "master": 57,
+        "np_seed": 3063039935,
+        "py_seed": 2864263885,
+        "torch_seed": 644749540,
+        "env_seed": 1923656922,
+        "action_seed": 1819352120,
+        "replay_seed": 567210849,
+        "eval_seed": 4271122277
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12883.615110511004,
+      "final_eval_mean_reward": 71.355899,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_15",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 88995,
+          "freq": 0.49441666666666667
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 42991,
+          "freq": 0.23883888888888888
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 11131,
+          "freq": 0.06183888888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_15/dqn_roundabout_mlp_run15.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:10.535269Z",
+      "position": [
+        75,
+        0
+      ],
+      "end_time": "2025-09-25T23:17:33.188851Z",
+      "timestamp": "2025-09-25T23:17:33.188859Z"
+    },
+    {
+      "run_id": 16,
+      "seed": {
+        "master": 58,
+        "np_seed": 3798459362,
+        "py_seed": 1390208050,
+        "torch_seed": 3110028968,
+        "env_seed": 3874081097,
+        "action_seed": 959528600,
+        "replay_seed": 3554466251,
+        "eval_seed": 105357702
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13142.350962848002,
+      "final_eval_mean_reward": 101.2504336,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_16",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 65175,
+          "freq": 0.3620833333333333
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 30123,
+          "freq": 0.16735
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 28865,
+          "freq": 0.16036111111111112
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_16/dqn_roundabout_mlp_run16.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:16.346503Z",
+      "position": [
+        75,
+        25
+      ],
+      "end_time": "2025-09-25T23:21:23.016572Z",
+      "timestamp": "2025-09-25T23:21:23.016586Z"
+    },
+    {
+      "run_id": 17,
+      "seed": {
+        "master": 59,
+        "np_seed": 881243617,
+        "py_seed": 2314889366,
+        "torch_seed": 418289019,
+        "env_seed": 3959582640,
+        "action_seed": 2145352676,
+        "replay_seed": 923363100,
+        "eval_seed": 3155895928
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13045.51951572,
+      "final_eval_mean_reward": 152.2529984,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_17",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 85256,
+          "freq": 0.4736444444444444
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 28919,
+          "freq": 0.16066111111111112
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 23414,
+          "freq": 0.13007777777777776
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_17/dqn_roundabout_mlp_run17.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:14.329679Z",
+      "position": [
+        75,
+        50
+      ],
+      "end_time": "2025-09-25T23:20:14.155771Z",
+      "timestamp": "2025-09-25T23:20:14.155783Z"
+    },
+    {
+      "run_id": 18,
+      "seed": {
+        "master": 60,
+        "np_seed": 2085146220,
+        "py_seed": 1828893759,
+        "torch_seed": 3889839721,
+        "env_seed": 2295977218,
+        "action_seed": 1294975439,
+        "replay_seed": 2753823376,
+        "eval_seed": 32198371
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13146.272283500999,
+      "final_eval_mean_reward": 150.78373699999997,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_18",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 45906,
+          "freq": 0.25503333333333333
+        },
+        {
+          "rank": 2,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 44731,
+          "freq": 0.24850555555555556
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 25214,
+          "freq": 0.14007777777777777
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_18/dqn_roundabout_mlp_run18.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:15.744892Z",
+      "position": [
+        75,
+        75
+      ],
+      "end_time": "2025-09-25T23:21:39.689015Z",
+      "timestamp": "2025-09-25T23:21:39.689027Z"
+    },
+    {
+      "run_id": 19,
+      "seed": {
+        "master": 61,
+        "np_seed": 738454527,
+        "py_seed": 2219229336,
+        "torch_seed": 320361761,
+        "env_seed": 1781892692,
+        "action_seed": 208077124,
+        "replay_seed": 1210217626,
+        "eval_seed": 756389726
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12943.940537796,
+      "final_eval_mean_reward": 171.0950504,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_19",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 73474,
+          "freq": 0.4081888888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 34298,
+          "freq": 0.19054444444444443
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 25638,
+          "freq": 0.14243333333333333
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_19/dqn_roundabout_mlp_run19.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:13.365194Z",
+      "position": [
+        75,
+        100
+      ],
+      "end_time": "2025-09-25T23:17:36.332554Z",
+      "timestamp": "2025-09-25T23:17:36.332563Z"
+    },
+    {
+      "run_id": 20,
+      "seed": {
+        "master": 62,
+        "np_seed": 2832562022,
+        "py_seed": 1760495997,
+        "torch_seed": 1942374247,
+        "env_seed": 608092878,
+        "action_seed": 2890563581,
+        "replay_seed": 1283745477,
+        "eval_seed": 33581263
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13117.398768913998,
+      "final_eval_mean_reward": 97.55607339999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_20",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 85546,
+          "freq": 0.47525555555555554
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 34835,
+          "freq": 0.19352777777777777
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 16529,
+          "freq": 0.09182777777777777
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_20/dqn_roundabout_mlp_run20.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:15.259717Z",
+      "position": [
+        100,
+        0
+      ],
+      "end_time": "2025-09-25T23:20:29.385094Z",
+      "timestamp": "2025-09-25T23:20:29.385109Z"
+    },
+    {
+      "run_id": 21,
+      "seed": {
+        "master": 63,
+        "np_seed": 4063276994,
+        "py_seed": 3263307046,
+        "torch_seed": 3921564993,
+        "env_seed": 3205173812,
+        "action_seed": 3357465127,
+        "replay_seed": 3900440313,
+        "eval_seed": 1119091730
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13042.214761431998,
+      "final_eval_mean_reward": 108.3767806,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_21",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 84393,
+          "freq": 0.46885
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 34193,
+          "freq": 0.1899611111111111
+        },
+        {
+          "rank": 3,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 21126,
+          "freq": 0.11736666666666666
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_21/dqn_roundabout_mlp_run21.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:16.848353Z",
+      "position": [
+        100,
+        25
+      ],
+      "end_time": "2025-09-25T23:19:08.579243Z",
+      "timestamp": "2025-09-25T23:19:08.579251Z"
+    },
+    {
+      "run_id": 22,
+      "seed": {
+        "master": 64,
+        "np_seed": 2921917413,
+        "py_seed": 235598889,
+        "torch_seed": 1967805034,
+        "env_seed": 2332439230,
+        "action_seed": 13532264,
+        "replay_seed": 3172372957,
+        "eval_seed": 415462045
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13281.444948161996,
+      "final_eval_mean_reward": 121.7001358,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_22",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 51835,
+          "freq": 0.28797222222222224
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 38565,
+          "freq": 0.21425
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 33412,
+          "freq": 0.18562222222222222
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_22/dqn_roundabout_mlp_run22.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:14.141840Z",
+      "position": [
+        100,
+        50
+      ],
+      "end_time": "2025-09-25T23:24:53.940200Z",
+      "timestamp": "2025-09-25T23:24:53.940219Z"
+    },
+    {
+      "run_id": 23,
+      "seed": {
+        "master": 65,
+        "np_seed": 2855718059,
+        "py_seed": 597513561,
+        "torch_seed": 1187509588,
+        "env_seed": 1965126435,
+        "action_seed": 1419111884,
+        "replay_seed": 76623278,
+        "eval_seed": 2795014425
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13049.423404346999,
+      "final_eval_mean_reward": 158.172183,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_23",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 111911,
+          "freq": 0.6217277777777778
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 19009,
+          "freq": 0.10560555555555555
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 18052,
+          "freq": 0.10028888888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_23/dqn_roundabout_mlp_run23.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:14.063349Z",
+      "position": [
+        100,
+        75
+      ],
+      "end_time": "2025-09-25T23:19:34.821051Z",
+      "timestamp": "2025-09-25T23:19:34.821059Z"
+    },
+    {
+      "run_id": 24,
+      "seed": {
+        "master": 66,
+        "np_seed": 1092786343,
+        "py_seed": 3869864859,
+        "torch_seed": 4224519742,
+        "env_seed": 1942430748,
+        "action_seed": 3210946138,
+        "replay_seed": 1089601442,
+        "eval_seed": 680164139
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13189.363754482998,
+      "final_eval_mean_reward": 193.0787654,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_24",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 45655,
+          "freq": 0.2536388888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 41759,
+          "freq": 0.23199444444444445
+        },
+        {
+          "rank": 3,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 30455,
+          "freq": 0.16919444444444445
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_24/dqn_roundabout_mlp_run24.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:13.003877Z",
+      "position": [
+        100,
+        100
+      ],
+      "end_time": "2025-09-25T23:22:39.832741Z",
+      "timestamp": "2025-09-25T23:22:39.832751Z"
+    },
+    {
+      "run_id": 25,
+      "seed": {
+        "master": 67,
+        "np_seed": 521010291,
+        "py_seed": 2171714294,
+        "torch_seed": 654035902,
+        "env_seed": 1566681556,
+        "action_seed": 1303084569,
+        "replay_seed": 2970655918,
+        "eval_seed": 3582212894
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13061.420571679999,
+      "final_eval_mean_reward": 133.0640682,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_25",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 50951,
+          "freq": 0.2830611111111111
+        },
+        {
+          "rank": 2,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 25288,
+          "freq": 0.14048888888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 19367,
+          "freq": 0.10759444444444445
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_25/dqn_roundabout_mlp_run25.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:16.281915Z",
+      "position": [
+        200,
+        200
+      ],
+      "end_time": "2025-09-25T23:19:29.152555Z",
+      "timestamp": "2025-09-25T23:19:29.152563Z"
+    },
+    {
+      "run_id": 26,
+      "seed": {
+        "master": 68,
+        "np_seed": 3523076111,
+        "py_seed": 2579769729,
+        "torch_seed": 3221755476,
+        "env_seed": 126078548,
+        "action_seed": 1998868562,
+        "replay_seed": 2808338113,
+        "eval_seed": 3646233819
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13148.900081843,
+      "final_eval_mean_reward": 122.37180559999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_26",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 37753,
+          "freq": 0.2097388888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 22629,
+          "freq": 0.12571666666666667
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 22167,
+          "freq": 0.12315
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_26/dqn_roundabout_mlp_run26.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:15.239929Z",
+      "position": [
+        200,
+        225
+      ],
+      "end_time": "2025-09-25T23:21:50.616673Z",
+      "timestamp": "2025-09-25T23:21:50.616682Z"
+    },
+    {
+      "run_id": 27,
+      "seed": {
+        "master": 69,
+        "np_seed": 154267328,
+        "py_seed": 820167792,
+        "torch_seed": 1742115786,
+        "env_seed": 3028472590,
+        "action_seed": 2599355833,
+        "replay_seed": 2843712380,
+        "eval_seed": 1406217508
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12928.029420772,
+      "final_eval_mean_reward": 101.64006880000001,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_27",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 59462,
+          "freq": 0.33034444444444444
+        },
+        {
+          "rank": 2,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 33739,
+          "freq": 0.18743888888888888
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 28020,
+          "freq": 0.15566666666666668
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_27/dqn_roundabout_mlp_run27.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.535546Z",
+      "position": [
+        200,
+        250
+      ],
+      "end_time": "2025-09-25T23:17:56.477611Z",
+      "timestamp": "2025-09-25T23:17:56.477621Z"
+    },
+    {
+      "run_id": 28,
+      "seed": {
+        "master": 70,
+        "np_seed": 3685850871,
+        "py_seed": 3090851765,
+        "torch_seed": 1960626849,
+        "env_seed": 3441571791,
+        "action_seed": 1706313678,
+        "replay_seed": 517250338,
+        "eval_seed": 2732192011
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13160.359598426003,
+      "final_eval_mean_reward": 98.75417680000001,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_28",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 40996,
+          "freq": 0.22775555555555554
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 21431,
+          "freq": 0.11906111111111112
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 20428,
+          "freq": 0.11348888888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_28/dqn_roundabout_mlp_run28.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:15.221749Z",
+      "position": [
+        200,
+        275
+      ],
+      "end_time": "2025-09-25T23:22:10.990400Z",
+      "timestamp": "2025-09-25T23:22:10.990408Z"
+    },
+    {
+      "run_id": 29,
+      "seed": {
+        "master": 71,
+        "np_seed": 4204695409,
+        "py_seed": 558023170,
+        "torch_seed": 388268478,
+        "env_seed": 4163960050,
+        "action_seed": 472187745,
+        "replay_seed": 483781876,
+        "eval_seed": 1287127147
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12908.097719258003,
+      "final_eval_mean_reward": 111.0797814,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_29",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 29579,
+          "freq": 0.16432777777777777
+        },
+        {
+          "rank": 2,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 28705,
+          "freq": 0.1594722222222222
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 27240,
+          "freq": 0.15133333333333332
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_29/dqn_roundabout_mlp_run29.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:12.861702Z",
+      "position": [
+        200,
+        300
+      ],
+      "end_time": "2025-09-25T23:16:47.886311Z",
+      "timestamp": "2025-09-25T23:16:47.886321Z"
+    },
+    {
+      "run_id": 30,
+      "seed": {
+        "master": 72,
+        "np_seed": 2732832790,
+        "py_seed": 1744872926,
+        "torch_seed": 4206524898,
+        "env_seed": 2542552780,
+        "action_seed": 3839882301,
+        "replay_seed": 3469047490,
+        "eval_seed": 3237637899
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13289.050211135997,
+      "final_eval_mean_reward": 112.14135819999998,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_30",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 63788,
+          "freq": 0.3543777777777778
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 38366,
+          "freq": 0.21314444444444444
+        },
+        {
+          "rank": 3,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 34547,
+          "freq": 0.19192777777777778
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_30/dqn_roundabout_mlp_run30.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:15.243846Z",
+      "position": [
+        225,
+        200
+      ],
+      "end_time": "2025-09-25T23:25:28.683883Z",
+      "timestamp": "2025-09-25T23:25:28.683891Z"
+    },
+    {
+      "run_id": 31,
+      "seed": {
+        "master": 73,
+        "np_seed": 2096511230,
+        "py_seed": 3052692166,
+        "torch_seed": 3673367086,
+        "env_seed": 3658885659,
+        "action_seed": 2345978435,
+        "replay_seed": 4192038345,
+        "eval_seed": 3165110344
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13055.315812099005,
+      "final_eval_mean_reward": 110.5248288,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_31",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 60606,
+          "freq": 0.3367
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 29571,
+          "freq": 0.16428333333333334
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 24625,
+          "freq": 0.13680555555555557
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_31/dqn_roundabout_mlp_run31.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:16.283048Z",
+      "position": [
+        225,
+        225
+      ],
+      "end_time": "2025-09-25T23:19:55.000759Z",
+      "timestamp": "2025-09-25T23:19:55.000767Z"
+    },
+    {
+      "run_id": 32,
+      "seed": {
+        "master": 74,
+        "np_seed": 2675628972,
+        "py_seed": 3343195825,
+        "torch_seed": 177246667,
+        "env_seed": 96528883,
+        "action_seed": 1448850266,
+        "replay_seed": 1301045162,
+        "eval_seed": 3045146664
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13205.140813152997,
+      "final_eval_mean_reward": 119.1913658,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_32",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 63046,
+          "freq": 0.35025555555555554
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 24497,
+          "freq": 0.13609444444444443
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 21544,
+          "freq": 0.11968888888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_32/dqn_roundabout_mlp_run32.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:17.429753Z",
+      "position": [
+        225,
+        250
+      ],
+      "end_time": "2025-09-25T23:22:56.937409Z",
+      "timestamp": "2025-09-25T23:22:56.937417Z"
+    },
+    {
+      "run_id": 33,
+      "seed": {
+        "master": 75,
+        "np_seed": 1719323907,
+        "py_seed": 881503517,
+        "torch_seed": 4260317875,
+        "env_seed": 3822531323,
+        "action_seed": 376474434,
+        "replay_seed": 2355490370,
+        "eval_seed": 3222123239
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13075.838975731,
+      "final_eval_mean_reward": 119.4669906,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_33",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 46323,
+          "freq": 0.25735
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 45385,
+          "freq": 0.2521388888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 22471,
+          "freq": 0.12483888888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_33/dqn_roundabout_mlp_run33.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:17.842334Z",
+      "position": [
+        225,
+        275
+      ],
+      "end_time": "2025-09-25T23:20:02.830454Z",
+      "timestamp": "2025-09-25T23:20:02.830465Z"
+    },
+    {
+      "run_id": 34,
+      "seed": {
+        "master": 76,
+        "np_seed": 3840911447,
+        "py_seed": 603510577,
+        "torch_seed": 265718576,
+        "env_seed": 9699771,
+        "action_seed": 429437060,
+        "replay_seed": 3838003035,
+        "eval_seed": 3903074576
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13129.318585884,
+      "final_eval_mean_reward": 120.4332586,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_34",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 60420,
+          "freq": 0.33566666666666667
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 39597,
+          "freq": 0.21998333333333334
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 30278,
+          "freq": 0.16821111111111112
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_34/dqn_roundabout_mlp_run34.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:17.410635Z",
+      "position": [
+        225,
+        300
+      ],
+      "end_time": "2025-09-25T23:20:59.016689Z",
+      "timestamp": "2025-09-25T23:20:59.016710Z"
+    },
+    {
+      "run_id": 35,
+      "seed": {
+        "master": 77,
+        "np_seed": 1548870650,
+        "py_seed": 654150503,
+        "torch_seed": 1337111886,
+        "env_seed": 1416426816,
+        "action_seed": 1471706967,
+        "replay_seed": 2974996551,
+        "eval_seed": 327864141
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13040.021736265,
+      "final_eval_mean_reward": 118.82852,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_35",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 58585,
+          "freq": 0.3254722222222222
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 39841,
+          "freq": 0.2213388888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 32259,
+          "freq": 0.17921666666666666
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_35/dqn_roundabout_mlp_run35.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:18.466804Z",
+      "position": [
+        250,
+        200
+      ],
+      "end_time": "2025-09-25T23:19:07.461377Z",
+      "timestamp": "2025-09-25T23:19:07.461387Z"
+    },
+    {
+      "run_id": 36,
+      "seed": {
+        "master": 78,
+        "np_seed": 3853142516,
+        "py_seed": 2913614006,
+        "torch_seed": 2598801315,
+        "env_seed": 3231804724,
+        "action_seed": 543173651,
+        "replay_seed": 3417207952,
+        "eval_seed": 2070155935
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13322.835101329998,
+      "final_eval_mean_reward": 95.80775680000002,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_36",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 58444,
+          "freq": 0.3246888888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 27763,
+          "freq": 0.1542388888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 14337,
+          "freq": 0.07965
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_36/dqn_roundabout_mlp_run36.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:17.394980Z",
+      "position": [
+        250,
+        225
+      ],
+      "end_time": "2025-09-25T23:25:23.785563Z",
+      "timestamp": "2025-09-25T23:25:23.785573Z"
+    },
+    {
+      "run_id": 37,
+      "seed": {
+        "master": 79,
+        "np_seed": 2313580271,
+        "py_seed": 3531200737,
+        "torch_seed": 3927846568,
+        "env_seed": 2002764617,
+        "action_seed": 3523673251,
+        "replay_seed": 3101293138,
+        "eval_seed": 1668547657
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12978.913432796995,
+      "final_eval_mean_reward": 79.48095839999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_37",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 50793,
+          "freq": 0.28218333333333334
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 45050,
+          "freq": 0.25027777777777777
+        },
+        {
+          "rank": 3,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 24167,
+          "freq": 0.1342611111111111
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_37/dqn_roundabout_mlp_run37.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:16.270860Z",
+      "position": [
+        250,
+        250
+      ],
+      "end_time": "2025-09-25T23:17:44.259418Z",
+      "timestamp": "2025-09-25T23:17:44.259429Z"
+    },
+    {
+      "run_id": 38,
+      "seed": {
+        "master": 80,
+        "np_seed": 3700119159,
+        "py_seed": 3739817004,
+        "torch_seed": 3436283443,
+        "env_seed": 3563348542,
+        "action_seed": 795650612,
+        "replay_seed": 1609735662,
+        "eval_seed": 2261310840
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 13309.227668414002,
+      "final_eval_mean_reward": 96.0469332,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_38",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 46573,
+          "freq": 0.2587388888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 32992,
+          "freq": 0.1832888888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 29255,
+          "freq": 0.16252777777777777
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_38/dqn_roundabout_mlp_run38.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:17.419280Z",
+      "position": [
+        250,
+        275
+      ],
+      "end_time": "2025-09-25T23:24:46.869357Z",
+      "timestamp": "2025-09-25T23:24:46.869368Z"
+    },
+    {
+      "run_id": 39,
+      "seed": {
+        "master": 81,
+        "np_seed": 3598130486,
+        "py_seed": 2501696044,
+        "torch_seed": 380285780,
+        "env_seed": 3152381003,
+        "action_seed": 3892116904,
+        "replay_seed": 440586833,
+        "eval_seed": 2747073016
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12930.333598670004,
+      "final_eval_mean_reward": 118.075616,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_39",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 54469,
+          "freq": 0.30260555555555557
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 25314,
+          "freq": 0.14063333333333333
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 25069,
+          "freq": 0.13927222222222221
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_39/dqn_roundabout_mlp_run39.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T19:26:16.278740Z",
+      "position": [
+        250,
+        300
+      ],
+      "end_time": "2025-09-25T23:16:48.579080Z",
+      "timestamp": "2025-09-25T23:16:48.579088Z"
+    },
+    {
+      "run_id": 40,
+      "seed": {
+        "master": 82,
+        "np_seed": 686731150,
+        "py_seed": 2948077065,
+        "torch_seed": 4040845217,
+        "env_seed": 1966397431,
+        "action_seed": 3321684568,
+        "replay_seed": 2111897424,
+        "eval_seed": 3151455451
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12243.755738601001,
+      "final_eval_mean_reward": 103.24729740000001,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_40",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 53667,
+          "freq": 0.29815
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 28447,
+          "freq": 0.1580388888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 24768,
+          "freq": 0.1376
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_40/dqn_roundabout_mlp_run40.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:17:01.364200Z",
+      "position": [
+        275,
+        200
+      ],
+      "end_time": "2025-09-26T02:56:16.700678Z",
+      "timestamp": "2025-09-26T02:56:16.700686Z"
+    },
+    {
+      "run_id": 41,
+      "seed": {
+        "master": 83,
+        "np_seed": 2271648071,
+        "py_seed": 3767233547,
+        "torch_seed": 3231753299,
+        "env_seed": 3234678198,
+        "action_seed": 3770654554,
+        "replay_seed": 3924793552,
+        "eval_seed": 409579924
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11452.071499574995,
+      "final_eval_mean_reward": 102.79058519999998,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_41",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 78337,
+          "freq": 0.43520555555555557
+        },
+        {
+          "rank": 2,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 44758,
+          "freq": 0.24865555555555555
+        },
+        {
+          "rank": 3,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 14497,
+          "freq": 0.08053888888888888
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_41/dqn_roundabout_mlp_run41.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:17:01.910689Z",
+      "position": [
+        275,
+        225
+      ],
+      "end_time": "2025-09-26T02:43:14.671480Z",
+      "timestamp": "2025-09-26T02:43:14.671489Z"
+    },
+    {
+      "run_id": 42,
+      "seed": {
+        "master": 84,
+        "np_seed": 1736712636,
+        "py_seed": 3824514236,
+        "torch_seed": 1199780256,
+        "env_seed": 379493621,
+        "action_seed": 1055198905,
+        "replay_seed": 4057579649,
+        "eval_seed": 1443811450
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12166.203588465993,
+      "final_eval_mean_reward": 95.0698784,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_42",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 50079,
+          "freq": 0.27821666666666667
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 28821,
+          "freq": 0.16011666666666666
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 27187,
+          "freq": 0.1510388888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_42/dqn_roundabout_mlp_run42.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:17:46.759184Z",
+      "position": [
+        275,
+        250
+      ],
+      "end_time": "2025-09-26T02:55:55.088472Z",
+      "timestamp": "2025-09-26T02:55:55.088481Z"
+    },
+    {
+      "run_id": 43,
+      "seed": {
+        "master": 85,
+        "np_seed": 253681125,
+        "py_seed": 887110929,
+        "torch_seed": 3264608771,
+        "env_seed": 815769833,
+        "action_seed": 215401722,
+        "replay_seed": 2344202432,
+        "eval_seed": 164033858
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11573.451473523994,
+      "final_eval_mean_reward": 95.5924488,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_43",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 74612,
+          "freq": 0.4145111111111111
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 21407,
+          "freq": 0.11892777777777777
+        },
+        {
+          "rank": 3,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 15662,
+          "freq": 0.08701111111111111
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_43/dqn_roundabout_mlp_run43.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:17:49.232228Z",
+      "position": [
+        275,
+        275
+      ],
+      "end_time": "2025-09-26T02:46:15.966251Z",
+      "timestamp": "2025-09-26T02:46:15.966260Z"
+    },
+    {
+      "run_id": 44,
+      "seed": {
+        "master": 86,
+        "np_seed": 1253870055,
+        "py_seed": 425510900,
+        "torch_seed": 2006703637,
+        "env_seed": 572487457,
+        "action_seed": 3276176754,
+        "replay_seed": 3807285015,
+        "eval_seed": 1126700303
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12142.376137656007,
+      "final_eval_mean_reward": 64.36911,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_44",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 56239,
+          "freq": 0.3124388888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 23018,
+          "freq": 0.12787777777777778
+        },
+        {
+          "rank": 3,
+          "dir_idx": 6,
+          "dir_deg": 270,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 21726,
+          "freq": 0.1207
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_44/dqn_roundabout_mlp_run44.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:17:57.095174Z",
+      "position": [
+        275,
+        300
+      ],
+      "end_time": "2025-09-26T02:55:57.864758Z",
+      "timestamp": "2025-09-26T02:55:57.864767Z"
+    },
+    {
+      "run_id": 45,
+      "seed": {
+        "master": 87,
+        "np_seed": 871420250,
+        "py_seed": 1758411620,
+        "torch_seed": 1522335128,
+        "env_seed": 3845854006,
+        "action_seed": 48248750,
+        "replay_seed": 1680857573,
+        "eval_seed": 3438994380
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11593.464098267003,
+      "final_eval_mean_reward": 80.11775300000001,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_45",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 30622,
+          "freq": 0.17012222222222223
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 26968,
+          "freq": 0.14982222222222222
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 24398,
+          "freq": 0.13554444444444444
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_45/dqn_roundabout_mlp_run45.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:18:09.816668Z",
+      "position": [
+        300,
+        200
+      ],
+      "end_time": "2025-09-26T02:46:48.178720Z",
+      "timestamp": "2025-09-26T02:46:48.178733Z"
+    },
+    {
+      "run_id": 46,
+      "seed": {
+        "master": 88,
+        "np_seed": 2947564449,
+        "py_seed": 3090495445,
+        "torch_seed": 1955443939,
+        "env_seed": 3259403128,
+        "action_seed": 458967999,
+        "replay_seed": 2171502413,
+        "eval_seed": 3049211498
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12161.863050739004,
+      "final_eval_mean_reward": 82.90137899999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_46",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 39688,
+          "freq": 0.2204888888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 32704,
+          "freq": 0.1816888888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 26126,
+          "freq": 0.14514444444444444
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_46/dqn_roundabout_mlp_run46.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:18:13.055548Z",
+      "position": [
+        300,
+        225
+      ],
+      "end_time": "2025-09-26T02:56:22.446383Z",
+      "timestamp": "2025-09-26T02:56:22.446390Z"
+    },
+    {
+      "run_id": 47,
+      "seed": {
+        "master": 89,
+        "np_seed": 447966710,
+        "py_seed": 3136949712,
+        "torch_seed": 3525631444,
+        "env_seed": 719166277,
+        "action_seed": 366856099,
+        "replay_seed": 2463725090,
+        "eval_seed": 2570627505
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11508.811712171002,
+      "final_eval_mean_reward": 86.4623436,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_47",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 53438,
+          "freq": 0.2968777777777778
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 23268,
+          "freq": 0.12926666666666667
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 22345,
+          "freq": 0.12413888888888888
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_47/dqn_roundabout_mlp_run47.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:18:14.517957Z",
+      "position": [
+        300,
+        250
+      ],
+      "end_time": "2025-09-26T02:45:31.958504Z",
+      "timestamp": "2025-09-26T02:45:31.958511Z"
+    },
+    {
+      "run_id": 48,
+      "seed": {
+        "master": 90,
+        "np_seed": 2452530904,
+        "py_seed": 110075439,
+        "torch_seed": 869838649,
+        "env_seed": 3735169515,
+        "action_seed": 3141838479,
+        "replay_seed": 224717474,
+        "eval_seed": 308747028
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12241.420913761009,
+      "final_eval_mean_reward": 82.9873634,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_48",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 33967,
+          "freq": 0.18870555555555554
+        },
+        {
+          "rank": 2,
+          "dir_idx": 7,
+          "dir_deg": 315,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 26241,
+          "freq": 0.14578333333333332
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 20484,
+          "freq": 0.1138
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_48/dqn_roundabout_mlp_run48.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:19:20.010487Z",
+      "position": [
+        300,
+        275
+      ],
+      "end_time": "2025-09-26T02:58:22.078830Z",
+      "timestamp": "2025-09-26T02:58:22.078837Z"
+    },
+    {
+      "run_id": 49,
+      "seed": {
+        "master": 91,
+        "np_seed": 1667530006,
+        "py_seed": 921018294,
+        "torch_seed": 2640169396,
+        "env_seed": 2578174890,
+        "action_seed": 3032351129,
+        "replay_seed": 2975312213,
+        "eval_seed": 624911065
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11581.515005374997,
+      "final_eval_mean_reward": 104.08630600000001,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_49",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 52949,
+          "freq": 0.2941611111111111
+        },
+        {
+          "rank": 2,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 36520,
+          "freq": 0.2028888888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 29119,
+          "freq": 0.16177222222222223
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_49/dqn_roundabout_mlp_run49.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:19:22.188974Z",
+      "position": [
+        300,
+        300
+      ],
+      "end_time": "2025-09-26T02:47:32.428244Z",
+      "timestamp": "2025-09-26T02:47:32.428254Z"
+    },
+    {
+      "run_id": 50,
+      "seed": {
+        "master": 92,
+        "np_seed": 4022384571,
+        "py_seed": 181699806,
+        "torch_seed": 456989657,
+        "env_seed": 624168560,
+        "action_seed": 3612548644,
+        "replay_seed": 2128357121,
+        "eval_seed": 4001564492
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12315.931150755998,
+      "final_eval_mean_reward": 146.4033532,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_50",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 94009,
+          "freq": 0.5222722222222222
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 37705,
+          "freq": 0.20947222222222223
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 20125,
+          "freq": 0.11180555555555556
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_50/dqn_roundabout_mlp_run50.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:19:31.130270Z",
+      "position": [
+        400,
+        0
+      ],
+      "end_time": "2025-09-26T03:00:13.231694Z",
+      "timestamp": "2025-09-26T03:00:13.231701Z"
+    },
+    {
+      "run_id": 51,
+      "seed": {
+        "master": 93,
+        "np_seed": 1261816118,
+        "py_seed": 1222536387,
+        "torch_seed": 3369425155,
+        "env_seed": 894517239,
+        "action_seed": 1257137942,
+        "replay_seed": 2123019278,
+        "eval_seed": 3391416644
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11516.812236562997,
+      "final_eval_mean_reward": 169.1314582,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_51",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 69126,
+          "freq": 0.38403333333333334
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 44605,
+          "freq": 0.24780555555555556
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 42306,
+          "freq": 0.23503333333333334
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_51/dqn_roundabout_mlp_run51.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:19:34.580931Z",
+      "position": [
+        400,
+        25
+      ],
+      "end_time": "2025-09-26T02:46:31.635619Z",
+      "timestamp": "2025-09-26T02:46:31.635630Z"
+    },
+    {
+      "run_id": 52,
+      "seed": {
+        "master": 94,
+        "np_seed": 2268133520,
+        "py_seed": 234838549,
+        "torch_seed": 1001763696,
+        "env_seed": 319681944,
+        "action_seed": 199429388,
+        "replay_seed": 2911407396,
+        "eval_seed": 3385885383
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12270.421296743,
+      "final_eval_mean_reward": 166.32829740000003,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_52",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 55245,
+          "freq": 0.30691666666666667
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 46140,
+          "freq": 0.25633333333333336
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 20014,
+          "freq": 0.11118888888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_52/dqn_roundabout_mlp_run52.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:19:38.876352Z",
+      "position": [
+        400,
+        50
+      ],
+      "end_time": "2025-09-26T02:59:35.754533Z",
+      "timestamp": "2025-09-26T02:59:35.754544Z"
+    },
+    {
+      "run_id": 53,
+      "seed": {
+        "master": 95,
+        "np_seed": 2394792604,
+        "py_seed": 142050535,
+        "torch_seed": 2656343306,
+        "env_seed": 424479683,
+        "action_seed": 2551165698,
+        "replay_seed": 2103217391,
+        "eval_seed": 2356312151
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11574.307919883002,
+      "final_eval_mean_reward": 199.9830848,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_53",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 51382,
+          "freq": 0.2854555555555556
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 44045,
+          "freq": 0.24469444444444444
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 35201,
+          "freq": 0.1955611111111111
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_53/dqn_roundabout_mlp_run53.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:19:42.832873Z",
+      "position": [
+        400,
+        75
+      ],
+      "end_time": "2025-09-26T02:47:54.871059Z",
+      "timestamp": "2025-09-26T02:47:54.871068Z"
+    },
+    {
+      "run_id": 54,
+      "seed": {
+        "master": 96,
+        "np_seed": 3185509491,
+        "py_seed": 2342613350,
+        "torch_seed": 669155708,
+        "env_seed": 4269420916,
+        "action_seed": 503135765,
+        "replay_seed": 623777350,
+        "eval_seed": 3502829848
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12215.364259405993,
+      "final_eval_mean_reward": 195.47709600000002,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_54",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 67123,
+          "freq": 0.37290555555555555
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 44123,
+          "freq": 0.24512777777777778
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 25587,
+          "freq": 0.14215
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_54/dqn_roundabout_mlp_run54.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:19:48.239155Z",
+      "position": [
+        400,
+        100
+      ],
+      "end_time": "2025-09-26T02:58:08.830845Z",
+      "timestamp": "2025-09-26T02:58:08.830852Z"
+    },
+    {
+      "run_id": 55,
+      "seed": {
+        "master": 97,
+        "np_seed": 938443845,
+        "py_seed": 1152032387,
+        "torch_seed": 1962041386,
+        "env_seed": 3868473507,
+        "action_seed": 1598969992,
+        "replay_seed": 1810857829,
+        "eval_seed": 4245195622
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11548.461053777995,
+      "final_eval_mean_reward": 120.2888174,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_55",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 57403,
+          "freq": 0.31890555555555555
+        },
+        {
+          "rank": 2,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 26523,
+          "freq": 0.14735
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 25061,
+          "freq": 0.13922777777777778
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_55/dqn_roundabout_mlp_run55.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:20:00.967586Z",
+      "position": [
+        425,
+        0
+      ],
+      "end_time": "2025-09-26T02:47:52.315514Z",
+      "timestamp": "2025-09-26T02:47:52.315524Z"
+    },
+    {
+      "run_id": 56,
+      "seed": {
+        "master": 98,
+        "np_seed": 3728249662,
+        "py_seed": 2625071544,
+        "torch_seed": 1693030057,
+        "env_seed": 3169889393,
+        "action_seed": 661935054,
+        "replay_seed": 4046556423,
+        "eval_seed": 1621135410
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12272.146390436006,
+      "final_eval_mean_reward": 128.00500399999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_56",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 137573,
+          "freq": 0.7642944444444445
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 29801,
+          "freq": 0.1655611111111111
+        },
+        {
+          "rank": 3,
+          "dir_idx": 0,
+          "dir_deg": 0,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 6890,
+          "freq": 0.03827777777777778
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_56/dqn_roundabout_mlp_run56.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:20:07.670232Z",
+      "position": [
+        425,
+        25
+      ],
+      "end_time": "2025-09-26T02:59:01.436419Z",
+      "timestamp": "2025-09-26T02:59:01.436425Z"
+    },
+    {
+      "run_id": 57,
+      "seed": {
+        "master": 99,
+        "np_seed": 3816471015,
+        "py_seed": 1632958224,
+        "torch_seed": 4292511369,
+        "env_seed": 2452748179,
+        "action_seed": 3861637618,
+        "replay_seed": 2798407123,
+        "eval_seed": 1450631671
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11582.575162539004,
+      "final_eval_mean_reward": 172.25658579999998,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_57",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 51140,
+          "freq": 0.2841111111111111
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 35768,
+          "freq": 0.19871111111111112
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 26714,
+          "freq": 0.1484111111111111
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_57/dqn_roundabout_mlp_run57.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:20:16.510875Z",
+      "position": [
+        425,
+        50
+      ],
+      "end_time": "2025-09-26T02:48:21.937967Z",
+      "timestamp": "2025-09-26T02:48:21.937978Z"
+    },
+    {
+      "run_id": 58,
+      "seed": {
+        "master": 100,
+        "np_seed": 2691894709,
+        "py_seed": 996667667,
+        "torch_seed": 3468527200,
+        "env_seed": 2386510338,
+        "action_seed": 1687966695,
+        "replay_seed": 2615694846,
+        "eval_seed": 1280395634
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12158.564136404006,
+      "final_eval_mean_reward": 202.780227,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_58",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 57446,
+          "freq": 0.31914444444444445
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 36050,
+          "freq": 0.20027777777777778
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 26228,
+          "freq": 0.14571111111111112
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_58/dqn_roundabout_mlp_run58.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:20:19.072449Z",
+      "position": [
+        425,
+        75
+      ],
+      "end_time": "2025-09-26T02:58:19.411844Z",
+      "timestamp": "2025-09-26T02:58:19.411852Z"
+    },
+    {
+      "run_id": 59,
+      "seed": {
+        "master": 101,
+        "np_seed": 453755088,
+        "py_seed": 468633995,
+        "torch_seed": 1065319523,
+        "env_seed": 3164020187,
+        "action_seed": 417724675,
+        "replay_seed": 1208381939,
+        "eval_seed": 3436322460
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11521.085065704,
+      "final_eval_mean_reward": 177.4214618,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_59",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 93257,
+          "freq": 0.5180944444444444
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 23632,
+          "freq": 0.1312888888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 21887,
+          "freq": 0.12159444444444445
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_59/dqn_roundabout_mlp_run59.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:20:26.797846Z",
+      "position": [
+        425,
+        100
+      ],
+      "end_time": "2025-09-26T02:48:23.490249Z",
+      "timestamp": "2025-09-26T02:48:23.490259Z"
+    },
+    {
+      "run_id": 60,
+      "seed": {
+        "master": 102,
+        "np_seed": 726912521,
+        "py_seed": 541647636,
+        "torch_seed": 2792992462,
+        "env_seed": 3976197752,
+        "action_seed": 3196652008,
+        "replay_seed": 114399307,
+        "eval_seed": 3740538765
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12216.104191074002,
+      "final_eval_mean_reward": 87.9529954,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_60",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 110687,
+          "freq": 0.6149277777777777
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 36820,
+          "freq": 0.20455555555555555
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 18093,
+          "freq": 0.10051666666666667
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_60/dqn_roundabout_mlp_run60.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:20:42.579040Z",
+      "position": [
+        450,
+        0
+      ],
+      "end_time": "2025-09-26T02:58:54.739945Z",
+      "timestamp": "2025-09-26T02:58:54.739953Z"
+    },
+    {
+      "run_id": 61,
+      "seed": {
+        "master": 103,
+        "np_seed": 748220756,
+        "py_seed": 920833089,
+        "torch_seed": 3329680735,
+        "env_seed": 3201216415,
+        "action_seed": 4073016626,
+        "replay_seed": 2691302010,
+        "eval_seed": 867803433
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11487.674651157999,
+      "final_eval_mean_reward": 99.99165760000001,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_61",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 95320,
+          "freq": 0.5295555555555556
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 38676,
+          "freq": 0.21486666666666668
+        },
+        {
+          "rank": 3,
+          "dir_idx": 1,
+          "dir_deg": 45,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 16455,
+          "freq": 0.09141666666666666
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_61/dqn_roundabout_mlp_run61.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:21:11.836071Z",
+      "position": [
+        450,
+        25
+      ],
+      "end_time": "2025-09-26T02:47:08.694255Z",
+      "timestamp": "2025-09-26T02:47:08.694264Z"
+    },
+    {
+      "run_id": 62,
+      "seed": {
+        "master": 104,
+        "np_seed": 4184508151,
+        "py_seed": 2618346598,
+        "torch_seed": 369126712,
+        "env_seed": 2722818522,
+        "action_seed": 1578359946,
+        "replay_seed": 2589751363,
+        "eval_seed": 1117468810
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12140.564015848999,
+      "final_eval_mean_reward": 154.147809,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_62",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 91036,
+          "freq": 0.5057555555555555
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 44496,
+          "freq": 0.2472
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 14342,
+          "freq": 0.07967777777777778
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_62/dqn_roundabout_mlp_run62.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:21:31.531661Z",
+      "position": [
+        450,
+        50
+      ],
+      "end_time": "2025-09-26T02:58:26.415257Z",
+      "timestamp": "2025-09-26T02:58:26.415265Z"
+    },
+    {
+      "run_id": 63,
+      "seed": {
+        "master": 105,
+        "np_seed": 73861449,
+        "py_seed": 315557727,
+        "torch_seed": 1576486694,
+        "env_seed": 1010340609,
+        "action_seed": 2792922787,
+        "replay_seed": 103110699,
+        "eval_seed": 2926622835
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11567.904215896,
+      "final_eval_mean_reward": 163.777536,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_63",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 65842,
+          "freq": 0.3657888888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 36376,
+          "freq": 0.2020888888888889
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 23371,
+          "freq": 0.1298388888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_63/dqn_roundabout_mlp_run63.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:21:36.008508Z",
+      "position": [
+        450,
+        75
+      ],
+      "end_time": "2025-09-26T02:49:22.111375Z",
+      "timestamp": "2025-09-26T02:49:22.111383Z"
+    },
+    {
+      "run_id": 64,
+      "seed": {
+        "master": 106,
+        "np_seed": 452532088,
+        "py_seed": 2309025,
+        "torch_seed": 2134893451,
+        "env_seed": 2739608239,
+        "action_seed": 1454728112,
+        "replay_seed": 3408178935,
+        "eval_seed": 1765927948
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12131.400374001998,
+      "final_eval_mean_reward": 160.164537,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_64",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 77184,
+          "freq": 0.4288
+        },
+        {
+          "rank": 2,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 26970,
+          "freq": 0.14983333333333335
+        },
+        {
+          "rank": 3,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 21705,
+          "freq": 0.12058333333333333
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_64/dqn_roundabout_mlp_run64.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:21:52.542353Z",
+      "position": [
+        450,
+        100
+      ],
+      "end_time": "2025-09-26T02:58:29.756979Z",
+      "timestamp": "2025-09-26T02:58:29.756987Z"
+    },
+    {
+      "run_id": 65,
+      "seed": {
+        "master": 107,
+        "np_seed": 4077029987,
+        "py_seed": 1939851215,
+        "torch_seed": 3528521038,
+        "env_seed": 2681526554,
+        "action_seed": 3797420140,
+        "replay_seed": 351345410,
+        "eval_seed": 585807247
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11603.137857876995,
+      "final_eval_mean_reward": 97.7901304,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_65",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 91494,
+          "freq": 0.5083
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 49595,
+          "freq": 0.27552777777777776
+        },
+        {
+          "rank": 3,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 15620,
+          "freq": 0.08677777777777777
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_65/dqn_roundabout_mlp_run65.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:22:03.674911Z",
+      "position": [
+        475,
+        0
+      ],
+      "end_time": "2025-09-26T02:50:34.145255Z",
+      "timestamp": "2025-09-26T02:50:34.145263Z"
+    },
+    {
+      "run_id": 66,
+      "seed": {
+        "master": 108,
+        "np_seed": 3692110797,
+        "py_seed": 1924393096,
+        "torch_seed": 163757491,
+        "env_seed": 1396896571,
+        "action_seed": 2011061038,
+        "replay_seed": 116679724,
+        "eval_seed": 360567461
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12133.865462879992,
+      "final_eval_mean_reward": 127.21814219999999,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_66",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 61356,
+          "freq": 0.34086666666666665
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 47028,
+          "freq": 0.26126666666666665
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 28951,
+          "freq": 0.1608388888888889
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_66/dqn_roundabout_mlp_run66.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:22:06.962300Z",
+      "position": [
+        475,
+        25
+      ],
+      "end_time": "2025-09-26T02:59:25.889184Z",
+      "timestamp": "2025-09-26T02:59:25.889194Z"
+    },
+    {
+      "run_id": 67,
+      "seed": {
+        "master": 109,
+        "np_seed": 84783481,
+        "py_seed": 1025961305,
+        "torch_seed": 3639586926,
+        "env_seed": 62612450,
+        "action_seed": 3173395702,
+        "replay_seed": 926606970,
+        "eval_seed": 1916915145
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11494.854602507003,
+      "final_eval_mean_reward": 130.02372440000002,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_67",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 66424,
+          "freq": 0.3690222222222222
+        },
+        {
+          "rank": 2,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 35895,
+          "freq": 0.19941666666666666
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 33286,
+          "freq": 0.1849222222222222
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_67/dqn_roundabout_mlp_run67.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:22:24.581022Z",
+      "position": [
+        475,
+        50
+      ],
+      "end_time": "2025-09-26T02:49:24.861984Z",
+      "timestamp": "2025-09-26T02:49:24.861992Z"
+    },
+    {
+      "run_id": 68,
+      "seed": {
+        "master": 110,
+        "np_seed": 3936664678,
+        "py_seed": 1281970410,
+        "torch_seed": 2108030712,
+        "env_seed": 3308102160,
+        "action_seed": 1342944757,
+        "replay_seed": 2633901516,
+        "eval_seed": 1286427579
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12129.592242521998,
+      "final_eval_mean_reward": 122.9661018,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_68",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 97942,
+          "freq": 0.5441222222222222
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 40245,
+          "freq": 0.22358333333333333
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 19711,
+          "freq": 0.10950555555555555
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_68/dqn_roundabout_mlp_run68.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:22:51.961158Z",
+      "position": [
+        475,
+        75
+      ],
+      "end_time": "2025-09-26T03:00:05.451180Z",
+      "timestamp": "2025-09-26T03:00:05.451188Z"
+    },
+    {
+      "run_id": 69,
+      "seed": {
+        "master": 111,
+        "np_seed": 4215091321,
+        "py_seed": 3802473640,
+        "torch_seed": 4131185790,
+        "env_seed": 1995879845,
+        "action_seed": 875133665,
+        "replay_seed": 1380787769,
+        "eval_seed": 2785847580
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11521.705706286004,
+      "final_eval_mean_reward": 174.7429244,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_69",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 89503,
+          "freq": 0.4972388888888889
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 26423,
+          "freq": 0.14679444444444445
+        },
+        {
+          "rank": 3,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 26154,
+          "freq": 0.1453
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_69/dqn_roundabout_mlp_run69.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:23:11.095617Z",
+      "position": [
+        475,
+        100
+      ],
+      "end_time": "2025-09-26T02:50:35.074644Z",
+      "timestamp": "2025-09-26T02:50:35.074654Z"
+    },
+    {
+      "run_id": 70,
+      "seed": {
+        "master": 112,
+        "np_seed": 3687465584,
+        "py_seed": 2430538435,
+        "torch_seed": 3858926887,
+        "env_seed": 63199889,
+        "action_seed": 2758332711,
+        "replay_seed": 296467246,
+        "eval_seed": 783792512
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12193.579081097,
+      "final_eval_mean_reward": 85.8391912,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_70",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 49481,
+          "freq": 0.27489444444444444
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 35599,
+          "freq": 0.1977722222222222
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 32163,
+          "freq": 0.17868333333333333
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_70/dqn_roundabout_mlp_run70.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:23:59.581210Z",
+      "position": [
+        500,
+        0
+      ],
+      "end_time": "2025-09-26T03:01:42.579842Z",
+      "timestamp": "2025-09-26T03:01:42.579850Z"
+    },
+    {
+      "run_id": 71,
+      "seed": {
+        "master": 113,
+        "np_seed": 2648360893,
+        "py_seed": 2391166168,
+        "torch_seed": 400283523,
+        "env_seed": 3602159076,
+        "action_seed": 1487320116,
+        "replay_seed": 3005308936,
+        "eval_seed": 2574577495
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11609.919624644004,
+      "final_eval_mean_reward": 93.05893840000002,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_71",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 63087,
+          "freq": 0.3504833333333333
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 42706,
+          "freq": 0.23725555555555555
+        },
+        {
+          "rank": 3,
+          "dir_idx": 2,
+          "dir_deg": 90,
+          "ang_idx": 0,
+          "ang_deg": 65,
+          "count": 28374,
+          "freq": 0.15763333333333332
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_71/dqn_roundabout_mlp_run71.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:24:07.121686Z",
+      "position": [
+        500,
+        25
+      ],
+      "end_time": "2025-09-26T02:52:46.975828Z",
+      "timestamp": "2025-09-26T02:52:46.975838Z"
+    },
+    {
+      "run_id": 72,
+      "seed": {
+        "master": 114,
+        "np_seed": 2703612775,
+        "py_seed": 1651609970,
+        "torch_seed": 201412965,
+        "env_seed": 3949054908,
+        "action_seed": 2376050177,
+        "replay_seed": 3699826708,
+        "eval_seed": 1699655416
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12171.471445489005,
+      "final_eval_mean_reward": 131.5071864,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_72",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 79835,
+          "freq": 0.4435277777777778
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 71432,
+          "freq": 0.39684444444444444
+        },
+        {
+          "rank": 3,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 18486,
+          "freq": 0.1027
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_72/dqn_roundabout_mlp_run72.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:24:14.594872Z",
+      "position": [
+        500,
+        50
+      ],
+      "end_time": "2025-09-26T03:01:57.110864Z",
+      "timestamp": "2025-09-26T03:01:57.110871Z"
+    },
+    {
+      "run_id": 73,
+      "seed": {
+        "master": 115,
+        "np_seed": 297917681,
+        "py_seed": 838181807,
+        "torch_seed": 877360448,
+        "env_seed": 1766668222,
+        "action_seed": 531752412,
+        "replay_seed": 2563556908,
+        "eval_seed": 835256157
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 11571.434565707,
+      "final_eval_mean_reward": 138.675479,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_73",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 99976,
+          "freq": 0.5554222222222223
+        },
+        {
+          "rank": 2,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 50762,
+          "freq": 0.2820111111111111
+        },
+        {
+          "rank": 3,
+          "dir_idx": 5,
+          "dir_deg": 225,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 14492,
+          "freq": 0.08051111111111112
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_73/dqn_roundabout_mlp_run73.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:24:17.428410Z",
+      "position": [
+        500,
+        75
+      ],
+      "end_time": "2025-09-26T02:52:40.675148Z",
+      "timestamp": "2025-09-26T02:52:40.675160Z"
+    },
+    {
+      "run_id": 74,
+      "seed": {
+        "master": 116,
+        "np_seed": 1963737042,
+        "py_seed": 375533477,
+        "torch_seed": 487146117,
+        "env_seed": 2839250510,
+        "action_seed": 1774015215,
+        "replay_seed": 1912838685,
+        "eval_seed": 2924493674
+      },
+      "episodes_window": 400,
+      "early_stop_min_improvement": 0.01,
+      "early_stop_check_every_ep": 50,
+      "episodes_trained": 750,
+      "early_stopped": false,
+      "early_stop_step": null,
+      "early_prev_mean": null,
+      "early_curr_mean": null,
+      "early_delta": null,
+      "timesteps_trained": 1350000,
+      "train_wall_time_sec": 12210.649477225,
+      "final_eval_mean_reward": 145.6177044,
+      "run_dir": "logs/reinforce/roundabout_dqn/run_74",
+      "best_actions": [
+        {
+          "rank": 1,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 1,
+          "ang_deg": 90,
+          "count": 60795,
+          "freq": 0.33775
+        },
+        {
+          "rank": 2,
+          "dir_idx": 3,
+          "dir_deg": 135,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 41353,
+          "freq": 0.22973888888888888
+        },
+        {
+          "rank": 3,
+          "dir_idx": 4,
+          "dir_deg": 180,
+          "ang_idx": 2,
+          "ang_deg": 120,
+          "count": 31848,
+          "freq": 0.17693333333333333
+        }
+      ],
+      "final_model_path": "logs/reinforce/roundabout_dqn/run_74/dqn_roundabout_mlp_run74.zip",
+      "weights_pth_saved": true,
+      "start_time": "2025-09-25T23:24:26.804662Z",
+      "position": [
+        500,
+        100
+      ],
+      "end_time": "2025-09-26T03:02:33.744335Z",
+      "timestamp": "2025-09-26T03:02:33.744343Z"
+    }
+  ]
+}

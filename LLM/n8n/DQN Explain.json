@@ -1,0 +1,609 @@
+{
+  "name": "DQN Explain",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "streamlit",
+        "options": {}
+      },
+      "id": "557b4e11-6959-42b0-b741-cec7033f2d90",
+      "name": "Ask Question Webhook-Streamlit",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -1328,
+        384
+      ],
+      "webhookId": "2779cfb8-fb77-4570-acf9-c561027f12fc"
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "bucketName": "dqn-simulation",
+        "fileName": "={{ $('Merge Inputs').item.json.file_name }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.awsS3",
+      "typeVersion": 2,
+      "position": [
+        880,
+        464
+      ],
+      "id": "b17bd13c-ec09-4d3d-b192-5932c7583b2d",
+      "name": "Upload a file",
+      "credentials": {
+        "aws": {
+          "id": "yTt1JD3aTcdSlTxg",
+          "name": "AWS account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "output",
+        "options": {
+          "fileName": "={{ $json.file_name }}"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        640,
+        464
+      ],
+      "id": "5a55f78b-2ed5-4ed9-859f-ced1ca2aecd7",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "model": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+        "options": {}
+      },
+      "id": "03acbc1e-6cf2-4042-a144-fae770f46695",
+      "name": "SQL-AWS Bedrock Claude 3.5 Sonnet",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAwsBedrock",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        256
+      ],
+      "credentials": {
+        "aws": {
+          "id": "yTt1JD3aTcdSlTxg",
+          "name": "AWS account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "amazon.titan-embed-text-v2:0"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsAwsBedrock",
+      "typeVersion": 1,
+      "position": [
+        -704,
+        912
+      ],
+      "id": "6f1253a2-1f7c-4787-a3e8-5419fe0e051b",
+      "name": "Titan Text Embeddings V2",
+      "credentials": {
+        "aws": {
+          "id": "yTt1JD3aTcdSlTxg",
+          "name": "AWS account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+        "options": {}
+      },
+      "id": "312f6096-0a83-41a5-a869-0ccaf16aed81",
+      "name": "RAG-AWS Bedrock Claude 3.5 Sonnect",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAwsBedrock",
+      "typeVersion": 1,
+      "position": [
+        -896,
+        848
+      ],
+      "credentials": {
+        "aws": {
+          "id": "yTt1JD3aTcdSlTxg",
+          "name": "AWS account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Work with this data in every question.",
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "dqn-explain",
+          "mode": "list",
+          "cachedResultName": "dqn-explain"
+        },
+        "topK": 5,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1.3,
+      "position": [
+        -704,
+        768
+      ],
+      "id": "e3f245d7-efb6-43de-ab67-01e9f819d60e",
+      "name": "Vector Store",
+      "credentials": {
+        "pineconeApi": {
+          "id": "yQnBjcJiXZVqUUKj",
+          "name": "PineconeApi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "agent": "sqlAgent",
+        "promptType": "define",
+        "text": "=The user will ask a simulation-related question.  \nUser input : {{ $json.chatInput }}{{ $json.body.question }}  \n\nYou are an SQL generation agent.  \nAlways generate valid PostgreSQL queries against the schema with three tables:  \n\n- runs(run_id, algo, start_time, end_time, final_eval_mean_reward, position_x, position_y, top1_action_freq, action_entropy, early_stopped, run_dir, final_model_path)  \n- run_seeds(run_id, master, np_seed, py_seed, torch_seed, env_seed, action_seed, replay_seed, eval_seed, algo)  \n- run_best_actions(run_id, rank, dir_idx, dir_deg, ang_idx, ang_deg, count, freq, algo)  \n\nRules:  \n- Always include results for BOTH algorithms by scoping queries with:  \n  WHERE algo IN ('dqn','q_factorized')  \n  unless the user explicitly requests a different set.  \n- Return aggregated metrics (COUNT, MIN, MAX, AVG) when the question asks about comparisons.  \n- When the question refers to best or top runs, return the best run for each algorithm by using:  \n  ROW_NUMBER() OVER (PARTITION BY algo ORDER BY final_eval_mean_reward DESC) and filter rn = 1.  \n- Never use a single global LIMIT 1.  \n- When reporting best/top runs, include run_id in the result.  \n- Never ignore one algorithm unless the database truly has no entries.  \n- If the question is unrelated to the schema, return an empty result (e.g. SELECT * FROM runs WHERE 1=0).  \n- Return a single runnable SQL statement only. No comments, no prose, no multiple statements.\n- Location or Placement means run_id",
+        "options": {
+          "topK": 3
+        }
+      },
+      "id": "337e06e4-c138-4072-8ece-00773f20221e",
+      "name": "SQL-AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        -272,
+        48
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "ayrqVzHD1IlDAPzO",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are an Image Analysis Agent working in the context of a reinforcement learning simulation project.  \nThe project compares two algorithms: DQN (Deep Q-Network) and Q-learning/Q-factorized.  \nThe simulation environment is a 500m × 500m world with cars, direction choices {0°,45°,90°,…,315°}, and angles {65°,90°,120°}.  \nReward ≈ (capacity_gain − movement_penalty) / (1000 × N), with penalties of 200 Mbps per 45° hop and 100 Mbps per sector switch.  \n\nYour task:  \n- Look at the uploaded image(s). They may contain Q-tables, training curves, heatmaps, or comparative plots of algorithms.  \n- Identify what is shown (e.g., Q-table values, convergence speed, action distributions).  \n- Interpret the visual content in the context of the simulation rules and algorithms.  \n- When both DQN and Q-learning/Q-factorized are shown, compare them:\n  * Convergence speed (which learns faster, why?)  \n  * Stability (entropy vs deterministic policies)  \n  * Coverage vs penalties (how positions and directions affect reward)  \n- Provide a clear explanation that connects the image to the project’s goals: comparing algorithm performance, stability, and efficiency.  \n\nIf the image is not related to the project context, respond:  \n“I cannot analyze this image because it is outside the scope of the simulation project.”\n{{ $binary['image' + $json.imageIndex] }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -720,
+        160
+      ],
+      "id": "0370610c-d83e-4120-a310-c6b6be5c9800",
+      "name": "Visual-AI Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.question }}{{ $json.chatInput }}",
+        "options": {
+          "maxIterations": 1
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -896,
+        592
+      ],
+      "id": "62f7ef33-f11e-44e2-b433-6a869ccffd7a",
+      "name": "Vector-AI Agent"
+    },
+    {
+      "parameters": {
+        "agent": "reActAgent",
+        "promptType": "define",
+        "text": "=You are a simulation analysis agent.\nYour task is to combine the user’s question, SQL Agent output, Vector Store (rules/context) output, and (if present) Image Agent output into one final structured answer.\n\nInputs you may receive:\n\nUser question: {{ $json.question_input }}\n\nSQL Agent output (structured data): {{ $json.sql_output }}\n\nVector Store output (simulation rules or context): {{ $json.vector_output || $json.vector || '' }}\n\nImage Agent output (visual analysis text): {{ $json.image_output || '' }}\n\nRules:\n\nIf ALL of SQL, Vector, and Image outputs are empty → reply exactly: “I cannot answer because all data sources (SQL, rules, and image) are missing.”\n\nIf only SQL is available → use the SQL to summarize and interpret relative to the user’s question. State that rules/image were not provided.\n\nIf only Vector is available → use the rules/context to give a general explanation relevant to the question. State that no numerical SQL data or image analysis was provided.\n\nIf only Image is available → use the visual analysis (e.g., convergence curves, Q-tables, heatmaps, action distributions) to give a qualitative, project-aware explanation; state that no SQL numbers or rules text were provided.\n\nIf SQL + Vector are available → merge them. Use SQL for concrete results (runs, rewards, positions, entropy, top-1 action freq, etc.) and Vector for reasoning based on penalties, world size, and action space.\n\nIf SQL + Image are available (no Vector) → use SQL for numbers and Image output to explain patterns (e.g., faster convergence, stability, mode collapse, dominant Q-table entries). Mention rules are missing.\n\nIf Vector + Image are available (no SQL) → use rules for theory and Image output for qualitative evidence; note the absence of SQL numbers.\n\nIf all three (SQL + Vector + Image) are available → prioritize: SQL for metrics and specific runs; Vector for domain reasoning (penalties, 500×500 world, angle trade-offs); Image for trend interpretation (convergence speed, stability, action/angle distributions, Q-table dominance). Cross-validate where possible.\n\nDo not output raw SQL/JSON/image blobs or intermediate steps. Extract only the essentials. If an image appears off-topic or unclear, ignore it silently (do not speculate) and proceed with the other sources.\n\nYour answer must contain exactly three sections (titles must match exactly):\n\nSummary\n\nReport key results from SQL (e.g., per-algorithm: run_id, rewards, positions, entropy, top-1 action frequency).\n\nIf multiple algorithms (DQN, Q-factorized), summarize each and compare.\n\nIf the Image output is present and relevant, add one line summarizing what the plot/table indicates (e.g., “converges faster,” “more stable,” “dominant 45°/90° bin”).\n\nIf some fields are missing, write “(no data)”.\n\nInterpretation\n\nExplain why results are high/low using simulation rules when available: penalties for 45° hops and sector switches, positions in the 500×500 world, angle width trade-offs (65/90/120), reward scaling by N.\n\nIf Image output is present, connect its trends (e.g., steeper learning curve, lower variance, Q-table concentration) to SQL numbers and rules.\n\nIf rules are missing, note that interpretation is limited.\n\nRecommendations\n\nGive 2–3 concrete next steps tailored to the question (e.g., run more seeds, test alternative angles/directions, measure penalty contributions, compare positions (250,250) vs (100,100), add convergence diagnostics).\n\nIf the Image shows instability or slow convergence, suggest hyperparameter or exploration adjustments.\n\nKeep the response concise, structured, and focused only on the user’s question. No schema, no intermediate reasoning, no apologies.",
+        "options": {}
+      },
+      "id": "24f611d9-eadb-4e63-8cb1-d257f883c498",
+      "name": "Analysis-AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        176,
+        176
+      ]
+    },
+    {
+      "parameters": {
+        "model": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+        "options": {}
+      },
+      "id": "c18fedfb-2948-4b00-9148-eef6cb75a83d",
+      "name": "Analysis-AWS Bedrock Claude 3.5",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAwsBedrock",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        720
+      ],
+      "credentials": {
+        "aws": {
+          "id": "yTt1JD3aTcdSlTxg",
+          "name": "AWS account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combineBySql",
+        "numberInputs": 5,
+        "query": "SELECT\n  i1.output AS sql_output,\n  i2.output AS vector_output,\n  i3.output AS image_output,\n  i4.body.question AS question_input,\n  i5.body.output_file_name AS file_name\nFROM input1 i1\nCROSS JOIN input2 i2\nCROSS JOIN input3 i3\nCROSS JOIN input4 i4\nCROSS JOIN input5 i5",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        16,
+        432
+      ],
+      "id": "c12bed3d-3ba9-46b9-a728-f53b1c9aad2c",
+      "name": "Merge Inputs"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        448,
+        464
+      ],
+      "id": "f32db94d-76ac-44e4-8645-6dcef15d0b43",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "chatgpt-4o-latest",
+          "mode": "list",
+          "cachedResultName": "chatgpt-4o-latest"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        176,
+        368
+      ],
+      "id": "203d3700-9784-46a5-8c91-e9c49a82f25b",
+      "name": "OpenAI GPT-",
+      "credentials": {
+        "openAiApi": {
+          "id": "f1NWoqFkhDVcPNf6",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -448,
+        0
+      ],
+      "id": "f7498850-30b2-4320-ac3a-fc5c4f76af30",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-5-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-5-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -720,
+        352
+      ],
+      "id": "85d7d11b-79c9-4df1-a894-c6765881de5d",
+      "name": "OpenAI GPT-5-mini",
+      "credentials": {
+        "openAiApi": {
+          "id": "f1NWoqFkhDVcPNf6",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-5-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-5-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -128,
+        304
+      ],
+      "id": "4ae32e6c-a795-4c5d-a9cb-aee9aa66b7c6",
+      "name": "OpenAI GPT-5-mini1",
+      "credentials": {
+        "openAiApi": {
+          "id": "f1NWoqFkhDVcPNf6",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-5-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-5-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -1040,
+        800
+      ],
+      "id": "02805275-dd6c-4103-9c61-74256a62191b",
+      "name": "OpenAI GPT-5-mini2",
+      "credentials": {
+        "openAiApi": {
+          "id": "f1NWoqFkhDVcPNf6",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Ask Question Webhook-Streamlit": {
+      "main": [
+        [
+          {
+            "node": "Vector-AI Agent",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Visual-AI Agent",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge Inputs",
+            "type": "main",
+            "index": 3
+          },
+          {
+            "node": "Merge Inputs",
+            "type": "main",
+            "index": 4
+          },
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Upload a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SQL-AWS Bedrock Claude 3.5 Sonnet": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "SQL-AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Titan Text Embeddings V2": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RAG-AWS Bedrock Claude 3.5 Sonnect": {
+      "ai_languageModel": [
+        []
+      ]
+    },
+    "Vector Store": {
+      "ai_tool": [
+        [
+          {
+            "node": "Vector-AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SQL-AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Merge Inputs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Visual-AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Merge Inputs",
+            "type": "main",
+            "index": 2
+          },
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Vector-AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Merge Inputs",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Analysis-AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analysis-AWS Bedrock Claude 3.5": {
+      "ai_languageModel": [
+        []
+      ]
+    },
+    "Merge Inputs": {
+      "main": [
+        [
+          {
+            "node": "Analysis-AI Agent",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI GPT-": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Analysis-AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "SQL-AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI GPT-5-mini": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Visual-AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI GPT-5-mini1": {
+      "ai_languageModel": [
+        []
+      ]
+    },
+    "OpenAI GPT-5-mini2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Vector-AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "c22dc043-6096-4b5c-89d7-8e3275fe7171",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8ce3fec89318745bd4694ec79b93e0a1c9dede1785b3ec8c93f2adeec6e5f118"
+  },
+  "id": "HT9xITQrNGLNPwEF",
+  "tags": []
+}
